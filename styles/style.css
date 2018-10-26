@@ -3,7 +3,8 @@
 :root {
     text-align: center;
     background-color: #213f3d;
-    color: #b3ffb3
+    color: #b3ffb3;
+    font-family: 'Work Sans';
 }
 
 a:link {color: #99ff99;}

@@ -5,19 +5,35 @@
     <title> NM Color Theory Exercises </title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-    <script type="text/javascript" src="./scripts/w3color.js"></script>
 </head>
 
 <body>
     <h1> Color Theory Exercise I </h1>
+    <h3> Hue as Value </h3>
+    <a href="./color_manip.html">Excercise II ==&Gt;</a>
     <div id="full-contain">
-        <div id="RGBA-color">
-            
+        <div class="rgba">
+            <div id="rgba-color"></div><div id="rgba-grey"></div>
         </div>
-        <div id="RGBA-grey">
-
+        <div class="hsla">
+            <div id="hsla-color"></div><div id="hsla-grey"></div>
+        </div>
+        <div class="hex">
+            <div id="hex-color"></div><div id="hex-grey"></div>
+        </div>
+        <div class="hwb">
+            <div data-w3-color="hwb(204, 4%, 6%)" id="hwb-color"></div><div id="hwb-grey"></div>
+        </div>
+        <div class="cmyk">
+            <div data-w3-color="cmyk(86%, 0%, 0%, 20%)" id="cmyk-color"></div><div id="cmyk-grey"></div>
+        </div>
+        <div class="ncol">
+            <div data-w3-color="ncol(B40, 0%, 0%)" id="ncol-color"></div><div id="ncol-grey"></div>
         </div>
     </div>
+
+    <script type="text/javascript" src="./scripts/w3color.js"></script>
+    <script> w3SetColorsByAttribute(); </script>
 </body>
 
 </html>

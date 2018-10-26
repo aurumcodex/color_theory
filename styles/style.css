@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+:root {
+    text-align: center;
+    background-color: #213f3d;
+    color: #b3ffb3
+}
+
+a:link {color: #99ff99;}
+a:hover {color: #82ffd5;}
+a:visited {color: #009189;}
+
+/* === Excercise I === */
+
+#full-contain {
+    margin: 0 auto;
+    width: 20vw;
+    height: 59vw;
+    border: #646464 solid 2px;
+}
+
+/* .rgba {
+    width: 80vw;
+    height: 80vw;
+    display: block;
+} */
+
+/* div { border: #454545 solid 2px; } */
+
+div#rgba-color {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(170, 57, 57, 1);
+    width: 10vw;
+    height: 10vw;
+}
+
+div#rgba-grey {
+    display: inline-block;
+    background-color: hsla(0, 0%, 45%, 1);
+    width: 10vw;
+    height: 10vw;
+}
+
+div#hsla-color {
+    display: inline-block;
+    background-color: hsla(36, 100%, 50%, 1);
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -1vh;
+}
+
+div#hsla-grey {
+    display: inline-block;
+    background-color: hsla(36, 0%, 50%, 1);
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -1vh;
+}
+
+div#hex-color {
+    display: inline-block;
+    background-color: #34d81eff;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -2vh;
+}
+
+div#hex-grey {
+    display: inline-block;
+    background-color: #7a7a7aff;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -2vh;
+}
+
+div#hwb-color {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -3vh;
+}
+
+div#hwb-grey {
+    display: inline-block;
+    background-color: hsla(204, 0%, 49%, 1);
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -3vh;
+}
+
+div#cmyk-color {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -3.55vh;
+}
+
+div#cmyk-grey {
+    display: inline-block;
+    background-color: hsla(180, 0%, 46%, 1);
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -3.55vh;
+}
+
+div#ncol-color {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -4.1vh;
+}
+
+div#ncol-grey {
+    display: inline-block;
+    background-color: hsla(264, 0%, 50%, 1);
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    top: -4.1vh;
+}
+
+/* === Excercise II === */
+
+#wave-contain {
+    margin: 0 auto;
+    width: 95vw;
+    height: 50vw;
+    border: #646464 solid 2px;
+}
+
+#wave-contain div {
+    width: 15vw;
+    height: 15vw;
+}
+
+#fire { 
+    background-color: #d33604;
+    z-index: 0;
+}
+
+#dark_sand { 
+    background-color: #b55a2e;
+    position: relative;
+    top: -5vw;
+    left: 10vw;
+    z-index: -1;
+}
+
+#orange { 
+    background-color: #e07b09;
+    position: relative;
+    top: -10vw;
+    left: 20vw;
+    z-index: -2;
+}
+
+#gold { 
+    background-color: #e8990a;
+    position: relative;
+    top: -15vw;
+    left: 30vw;
+    z-index: -3;
+}
+
+#lime {
+    background-color: #8efa00;
+    position: relative;
+    top: -30vw;
+    left: 50vw;
+    z-index: 0;
+}
+
+#teal {
+    background-color: #4ebdab;
+    position: relative;
+    top: -55vw;
+    left: 60vw;
+    z-index: -1;
+}
+
+#ocean {
+    background-color: #5397cb;
+    position: relative;
+    top: -80vw;
+    left: 70vw;
+    z-index: -2;
+}
+
+#violet {
+    background-color: #be73b1;
+    position: relative;
+    top: -105vw;
+    left: 80vw;
+    z-index: -3;
+}
+
+/* === Excercise III === */
+#transparent-contain {
+    margin: 0 auto;
+    width: 95vw;
+    height: 50vw;
+    border: #646464 solid 2px;
+}
+
+#transparent-contain div {
+    /* display: inline-block; */
+    width: 15vw;
+    height: 15vw;
+}
+
+#light1 {
+    background-color: #8da336c3;
+    position: relative;
+    top: 3vw;
+    left: 5vw;
+}
+
+#dark1 {
+    background-color: #580f4fc2;
+    position: relative;
+    top: -3vw;
+    left: 12.5vw;
+    z-index: -2;
+}
+
+#light2 {
+    background-color: #8da336c0;
+    position: relative;
+    top: -12vw;
+    left: 35vw;
+    z-index: -1;
+}
+
+#dark2 {
+    background-color: #580f4f80;
+    position: relative;
+    top: -18vw;
+    left: 42.5vw;
+    z-index: -1;
+}
+
+#light3 {
+    background-color: #8da33680;
+    position: relative;
+    top: -27vw;
+    left: 65vw;
+    z-index: -1;
+}
+
+#dark3 {
+    background-color: #580f4fb0;
+    position: relative;
+    top: -33vw;
+    left: 72.5vw;
+    z-index: -1;
+}

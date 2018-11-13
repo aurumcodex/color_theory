@@ -13,7 +13,6 @@ a:visited {color: #009189;}
 
 
 /* === Excercise I === */
-
 #full-contain {
     margin: 0 auto;
     width: 20vw;
@@ -126,7 +125,6 @@ div#ncol-grey {
 
 
 /* === Excercise II === */
-
 #wave-contain {
     margin: 0 auto;
     width: 95vw;
@@ -202,7 +200,6 @@ div#ncol-grey {
 
 
 /* === Excercise III === */
-
 #transparent-contain {
     margin: 0 auto;
     width: 95vw;
@@ -265,7 +262,6 @@ div#ncol-grey {
 
 
 /* === Exercise IV === */
-
 @keyframes y-spinner {
     0%  { 
         transform: rotateY(0deg); 
@@ -559,3 +555,215 @@ div.emerald_ { background-color: #00FF74; }
     height: 100%;
     width: 7px;
 }
+
+
+/* === Exercise V === */
+@keyframes up-down {
+    0% {top: 0%;}
+    50% {top: 75%;}
+    100% {top: 0%;}
+}
+
+@keyframes spinning {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#interact-contain {
+    height: 70vh;
+    width: 100%;
+}
+
+#interact-contain div {
+    /* display: inline-block; */
+    margin: auto;
+    position: relative;
+    top: 2vh;
+}
+
+#interact-contain div div {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 7vh;
+}
+
+#interact-contain div div:hover {
+    animation: spinning 5s;
+}
+
+#lft_block {
+    background-color: #a8383b;
+    height: 21vh;
+    width: 21vh;
+    display: inline-block;
+    animation: up-down 10s infinite;
+}
+
+#rgt_block {
+    background-color: #7d9f35;
+    height: 21vh;
+    width: 21vh;
+    display: inline-block;
+    animation: up-down 10s infinite;
+}
+
+#lft_inner {
+    margin-top: 20vh;
+    position: relative;
+    top: 50%;
+    /* background-color: #226764; */
+    background-color: #41817f;
+    height: 7vh;
+    width: 7vh;
+    display: inline-block;
+}
+
+#rgt_inner {
+    margin-top: 20vh;
+    position: relative;
+    top: 50%;
+    /* background-color: #226764; */
+    background-color: #41817f;
+    height: 7vh;
+    width: 7vh;
+    display: inline-block;
+}
+
+#lft_inner:hover {
+    animation-name: spinning;
+    animation-duration: 5s;
+}
+
+#rgt_inner:hover {
+    animation-name: spinning;
+    animation-duration: 5s;
+}
+
+
+/* === Exercise 6 === */
+/* @keyframes poly_spin { */
+/*     0% {transform: rotate(0deg);} */
+/*     100% {transform: rotate(0deg);} */
+/* } */
+
+#freestyle-contain {
+    display: inline-block;
+    width: 100%;
+    height: 77vh;
+    background-color: #032a20;
+}
+
+#freestyle-contain div {
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 5s;
+}
+
+/* #freestyle-contain div:hover { */
+/*     /1* animation: poly_spin 5s 1; *1/ */
+/*     transform: rotateY(360deg) rotateZ(360deg); */
+/* } */
+
+.lgt_red {background-color: #f85d6cdf;}
+.lgt_red:hover {transform: rotateX(45deg) rotateY(180deg) rotateZ(270deg);}
+.red {background-color: #b90012ff;}
+.red:hover {transform: rotateX(90deg) rotateY(80deg) rotateZ(270deg);}
+.drk_red {background-color: #71061045;}
+.drk_red:hover {transform: rotateX(75deg) rotateY(280deg) rotateZ(180deg);}
+.lgt_orange {background-color: #ffa15f;}
+.lgt_orange:hover {transform: rotateX(3.14rad) rotateY(2.1rad) rotateZ(14rad);}
+.orange {background-color: #bf4f00;}
+.orange:hover {transform: rotateX(360deg) rotateY(0deg) rotateZ(135deg);}
+.drk_orange {background-color: #753406ce;}
+.drk_orange:hover {transform: rotateX(270deg) rotateY(-130deg) rotateZ(130deg);}
+.lgt_teal {background-color: #42b0a1;}
+.lgt_teal:hover {transform: rotateX(90deg) rotateY(420deg) rotateZ(200deg);}
+.teal {background-color: #007868;}
+.teal:hover {transform: rotateX(90deg) rotateY(420deg) rotateZ(200deg);}
+.drk_teal {background-color: #044A40;}
+.drk_teal:hover {transform: rotateX(90deg) rotateY(420deg) rotateZ(200deg);}
+.lgt_green {background-color: #6adc5279;}
+.lgt_green:hover {transform: rotateX(400deg) rotateY(4deg) rotateZ(15deg);}
+.green {background-color: #1c9f00;}
+.green:hover {transform: rotateX(42deg) rotateY(270deg) rotateZ(180deg);}
+.drk_green {background-color: #156205;}
+.drk_green:hover {transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);}
+
+#polygon_1 {
+    /* background-color: #ff9b5f; */
+    /* clip-path: polygon(); */
+    width: 20vh;
+    height: 20vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 50%);
+    z-index: 1;
+}
+
+#polygon_2 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_3 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_4 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_5{
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_6 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_7 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_8 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_9 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_10 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_11 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+#polygon_12 {
+    width: 30vh;
+    height: 30vh;
+    clip-path: polygon(25% 14%, 0% 6%, 90% 90%);
+    z-index: 2;
+}
+
+
